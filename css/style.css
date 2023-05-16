@@ -1,177 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+}  
 
 * {
-	padding:0;
-	margin:0;
-	box-sizing: border-box;
-
-	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
 body {
-	background-color: aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cabecalho {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	background-image: linear-gradient(#424e61, #4ebfe9);
-	padding: 24px 0;
-
+    background-color: #424E61;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
 }
 
-.cabecalho img {
-	width: 100px;
+.cabecalho-titulo {
+    width: 20%;
+    font-weight: 700;
 }
 
-.cabecalho nav {
-	display: flex;
-	gap: 32px;
+.cabecalho-titulo span {
+    color: rgb(104, 104, 207);
 }
 
-.cabecalho nav a {
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
+.cabecalho-lista-itens {
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 18px;
 }
 
-.cabecalho nav a:hover {
-	color: #0e2d38;
-	transition: 100ms;
-	text-decoration: underline;
+.cabecalho-links {
+    color: white;
+    text-decoration: none;
 }
 
-.Container {
-	margin-top: 40px;
-	padding-bottom: 80px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+.cabecalho-links:hover {
+    transition: 0.2s;
+    color: rgb(104, 104, 207);
 }
 
-.Container .Box {
-	position: relative;
-	width: 20rem;
-	height: 20rem;
-	margin: 3rem;
+.escola {
+    background-image: linear-gradient(#424E61, #4EBFE9);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
 }
 
-.ImgBox {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-	transition: all 0.5s ease-in-out;
+.escola-div-conteudo {
+    width: 35%;
 }
 
-.ImgBox img {
-	width: 20rem;
-	height: 20rem;
-	object-fit: cover;
-	resize: both;
+.escola-titulo {
+    padding: 24px 0;
+    font-size: 34px;
 }
 
-.Container .Box:hover .ImgBox {
-	transform: translate(3.5, 3.5);
+
+.escola-texto {
+    text-align: justify;
+    font-size: 18px;
 }
 
-.Container .Box:hover .ImgBox {
-	transform: translate(-1.5rem, -1.5rem);
+.escola-texto-2 {
+    padding-top: 5px;
+    text-align: justify;
+    font-size: 18px;
 }
 
-.icone {
-	position: relative;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: 1;
-	width: 10%;
+.escola-imagem {
+    width: 30%;
 }
 
-.icone img {
-	margin-bottom: 20px;
+.estudante-foto {
+    width: 150px;
 }
 
-.img-descricao h3 {
-	font-size: 34px;
+.estudante-icone {
+    width: 24px;
+    margin-bottom: 20px;
 }
 
-.img-descricao span {
-	font-size: 20px;
+.estudante-div {
+    text-align: center;
 }
 
-.Box:hover .icone {
-	opacity: 1;
+.estudante-titulo {
+    text-align: center;
+    padding: 50px 0;
 }
-
-.section-info {
-	margin: 40px;
-}
-
-.section-info summary {
-	font-size: 24px;
-}
-
-.section-info summary:hover {
-	cursor: pointer;
-}
-
-.section-info summary:hover {
-	transition: 300ms;
-}
-
-.section-info ul {
-	margin: 10px 0 0 50px;	
-}
-
-.section-info li {
-	line-height: 30px;
-}
-
-.informacoes {
-	font-size: 14px;
-}
-
-.informacoes span {
-	font-size: 18px;
+.estudante-todos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 .rodape {
-	text-align: center;
-	background-color:#4ebfe9;
-	font-size: 14px;
-	padding: 10px;
-	color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
-.rodape p:hover {
-	color: #0e2d38;
-	cursor: pointer;
+.rodape-imagem {
+    height: 30px;
+    padding: 12px 0;
 }
 
-ul {
-	list-style-type: square;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-/* define a cor da barra de rolagem e do botão */
-::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-}
-
-/* define a cor de fundo da barra de rolagem */
-::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+.rodape p {
+    color: rgb(255, 255, 255);
+    padding: 12px 0;
 }
